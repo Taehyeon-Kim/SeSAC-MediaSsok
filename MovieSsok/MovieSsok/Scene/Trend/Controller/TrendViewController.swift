@@ -7,6 +7,9 @@
 
 import UIKit
 
+import Alamofire
+import SwiftyJSON
+
 final class TrendViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -15,6 +18,7 @@ final class TrendViewController: UIViewController {
         super.viewDidLoad()
         
         configureCollectionView()
+        fetchTrendMovieList(for: "movie", at: "week")
     }
 }
 
@@ -39,5 +43,21 @@ extension TrendViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrendMovieCollectionViewCell.identifier, for: indexPath) as? TrendMovieCollectionViewCell else { return UICollectionViewCell() }
         return cell
+    }
+}
+
+extension TrendViewController {
+    func fetchTrendMovieList(for mediaType: String, at timeWindow: String) {
+        let url = APIConstants.getTrendingURL + "/\(mediaType)/\(timeWindow)" + "?api_key=\(Keys.TMDB)"
+        AF.request(url, method: .get).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                print("JSON: \(json)")
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
