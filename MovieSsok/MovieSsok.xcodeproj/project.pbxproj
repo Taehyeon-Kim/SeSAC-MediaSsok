@@ -13,12 +13,9 @@
 		BDDF76F5289A6E6C0096196B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDF76F4289A6E6C0096196B /* Assets.xcassets */; };
 		BDDF76F8289A6E6C0096196B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF76F6289A6E6C0096196B /* LaunchScreen.storyboard */; };
 		BDDF7705289A74110096196B /* TrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7704289A74110096196B /* TrendViewController.swift */; };
-		BDDF7708289A75510096196B /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BDDF7707289A75510096196B /* .gitkeep */; };
-		BDDF770D289A75B70096196B /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BDDF770C289A75B70096196B /* .gitkeep */; };
-		BDDF770F289A75C50096196B /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BDDF770E289A75C50096196B /* .gitkeep */; };
-		BDDF7711289A75D20096196B /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BDDF7710289A75D20096196B /* .gitkeep */; };
 		BDDF7714289A770F0096196B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BDDF7713289A770F0096196B /* Alamofire */; };
 		BDDF7717289A77210096196B /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = BDDF7716289A77210096196B /* SwiftyJSON */; };
+		BDDF771C289A7FD80096196B /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF771B289A7FD80096196B /* Keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +31,8 @@
 		BDDF770C289A75B70096196B /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		BDDF770E289A75C50096196B /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		BDDF7710289A75D20096196B /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		BDDF771A289A7CFC0096196B /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		BDDF771B289A7FD80096196B /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				BDDF76F9289A6E6C0096196B /* Info.plist */,
+				BDDF771A289A7CFC0096196B /* Secrets.xcconfig */,
+				BDDF771B289A7FD80096196B /* Keys.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -223,11 +224,7 @@
 			files = (
 				BDDF76F8289A6E6C0096196B /* LaunchScreen.storyboard in Resources */,
 				BDDF76F5289A6E6C0096196B /* Assets.xcassets in Resources */,
-				BDDF770D289A75B70096196B /* .gitkeep in Resources */,
-				BDDF770F289A75C50096196B /* .gitkeep in Resources */,
 				BDDF76F3289A6E6A0096196B /* Main.storyboard in Resources */,
-				BDDF7708289A75510096196B /* .gitkeep in Resources */,
-				BDDF7711289A75D20096196B /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */,
+				BDDF771C289A7FD80096196B /* Keys.swift in Sources */,
 				BDDF7705289A74110096196B /* TrendViewController.swift in Sources */,
 				BDDF76EE289A6E6A0096196B /* SceneDelegate.swift in Sources */,
 			);
@@ -382,6 +380,7 @@
 		};
 		BDDF76FD289A6E6C0096196B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDDF771A289A7CFC0096196B /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -410,6 +409,7 @@
 		};
 		BDDF76FE289A6E6C0096196B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDDF771A289A7CFC0096196B /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
