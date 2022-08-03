@@ -16,6 +16,9 @@
 		BDDF7714289A770F0096196B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BDDF7713289A770F0096196B /* Alamofire */; };
 		BDDF7717289A77210096196B /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = BDDF7716289A77210096196B /* SwiftyJSON */; };
 		BDDF771C289A7FD80096196B /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF771B289A7FD80096196B /* Keys.swift */; };
+		BDDF772D289AD8A10096196B /* TrendViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF772C289AD8A10096196B /* TrendViewController.storyboard */; };
+		BDDF7732289AD94C0096196B /* TrendMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7730289AD94C0096196B /* TrendMovieCollectionViewCell.swift */; };
+		BDDF7733289AD94C0096196B /* TrendMovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDDF7731289AD94C0096196B /* TrendMovieCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		BDDF7710289A75D20096196B /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		BDDF771A289A7CFC0096196B /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		BDDF771B289A7FD80096196B /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		BDDF772C289AD8A10096196B /* TrendViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrendViewController.storyboard; sourceTree = "<group>"; };
+		BDDF7730289AD94C0096196B /* TrendMovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendMovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		BDDF7731289AD94C0096196B /* TrendMovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendMovieCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +125,8 @@
 		BDDF7703289A73DD0096196B /* Trend */ = {
 			isa = PBXGroup;
 			children = (
-				BDDF7704289A74110096196B /* TrendViewController.swift */,
+				BDDF772F289AD9320096196B /* Cell */,
+				BDDF772E289AD8A60096196B /* Controller */,
 			);
 			path = Trend;
 			sourceTree = "<group>";
@@ -154,6 +161,24 @@
 				BDDF7710289A75D20096196B /* .gitkeep */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		BDDF772E289AD8A60096196B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDDF7704289A74110096196B /* TrendViewController.swift */,
+				BDDF772C289AD8A10096196B /* TrendViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDDF772F289AD9320096196B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BDDF7730289AD94C0096196B /* TrendMovieCollectionViewCell.swift */,
+				BDDF7731289AD94C0096196B /* TrendMovieCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDDF76F8289A6E6C0096196B /* LaunchScreen.storyboard in Resources */,
+				BDDF7733289AD94C0096196B /* TrendMovieCollectionViewCell.xib in Resources */,
+				BDDF772D289AD8A10096196B /* TrendViewController.storyboard in Resources */,
 				BDDF76F5289A6E6C0096196B /* Assets.xcassets in Resources */,
 				BDDF76F3289A6E6A0096196B /* Main.storyboard in Resources */,
 			);
@@ -237,6 +264,7 @@
 			files = (
 				BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */,
 				BDDF771C289A7FD80096196B /* Keys.swift in Sources */,
+				BDDF7732289AD94C0096196B /* TrendMovieCollectionViewCell.swift in Sources */,
 				BDDF7705289A74110096196B /* TrendViewController.swift in Sources */,
 				BDDF76EE289A6E6A0096196B /* SceneDelegate.swift in Sources */,
 			);
