@@ -20,6 +20,7 @@
 		BDDF7732289AD94C0096196B /* TrendMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7730289AD94C0096196B /* TrendMovieCollectionViewCell.swift */; };
 		BDDF7733289AD94C0096196B /* TrendMovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDDF7731289AD94C0096196B /* TrendMovieCollectionViewCell.xib */; };
 		BDDF7735289AE5C40096196B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7734289AE5C40096196B /* Constants.swift */; };
+		BDDF7737289AE7EC0096196B /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7736289AE7EC0096196B /* Media.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		BDDF7730289AD94C0096196B /* TrendMovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendMovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		BDDF7731289AD94C0096196B /* TrendMovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendMovieCollectionViewCell.xib; sourceTree = "<group>"; };
 		BDDF7734289AE5C40096196B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BDDF7736289AE7EC0096196B /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				BDDF770E289A75C50096196B /* .gitkeep */,
+				BDDF7736289AE7EC0096196B /* Media.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */,
 				BDDF771C289A7FD80096196B /* Keys.swift in Sources */,
+				BDDF7737289AE7EC0096196B /* Media.swift in Sources */,
 				BDDF7732289AD94C0096196B /* TrendMovieCollectionViewCell.swift in Sources */,
 				BDDF7705289A74110096196B /* TrendViewController.swift in Sources */,
 				BDDF76EE289A6E6A0096196B /* SceneDelegate.swift in Sources */,
