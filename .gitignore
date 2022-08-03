@@ -134,4 +134,4 @@ iOSInjectionProject/
 
 
 # Config
-*/*.xcconfig
+*.xcconfig
