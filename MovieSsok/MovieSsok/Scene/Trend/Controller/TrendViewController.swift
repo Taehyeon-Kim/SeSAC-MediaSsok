@@ -12,6 +12,8 @@ import SwiftyJSON
 
 final class TrendViewController: UIViewController {
     
+    private var mediaList: [Media] = []
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -37,11 +39,12 @@ extension TrendViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return mediaList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrendMovieCollectionViewCell.identifier, for: indexPath) as? TrendMovieCollectionViewCell else { return UICollectionViewCell() }
+        cell.bind(withMedia: mediaList[indexPath.row])
         return cell
     }
 }
@@ -53,7 +56,19 @@ extension TrendViewController {
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                print("JSON: \(json)")
+                let movies = json["results"].arrayValue
+                for movie in movies {
+                    let media = Media(
+                        releaseData: movie["release_date"].stringValue,
+                        title: movie["title"].stringValue,
+                        posterPath: movie["backdrop_path"].stringValue,
+                        rate: movie["vote_average"].doubleValue,
+                        originalTitle: movie["original_title"].stringValue,
+                        overview: movie["overview"].stringValue
+                    )
+                    self.mediaList.append(media)
+                    self.collectionView.reloadData()
+                }
                 
             case .failure(let error):
                 print(error)
