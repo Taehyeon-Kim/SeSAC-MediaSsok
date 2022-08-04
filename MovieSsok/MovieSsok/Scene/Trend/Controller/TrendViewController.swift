@@ -65,7 +65,8 @@ extension TrendViewController {
                 let movies = json["results"].arrayValue
                 for movie in movies {
                     let media = Media(
-                        releaseData: movie["release_date"].stringValue,
+                        id: movie["id"].intValue,
+                        releaseDate: movie["release_date"].stringValue,
                         title: movie["title"].stringValue,
                         posterPath: movie["backdrop_path"].stringValue,
                         rate: movie["vote_average"].doubleValue,

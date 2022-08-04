@@ -8,7 +8,8 @@
 import Foundation
 
 struct Media {
-    let releaseData: String
+    let id: Int
+    let releaseDate: String
     let title: String
     let posterPath: String
     let rate: Double
