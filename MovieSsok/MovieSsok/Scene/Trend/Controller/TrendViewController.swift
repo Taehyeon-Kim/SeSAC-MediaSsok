@@ -24,11 +24,12 @@ final class TrendViewController: UIViewController {
     }
 }
 
-extension TrendViewController: UICollectionViewDataSource {
+extension TrendViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     private func configureCollectionView() {
         let nib = UINib(nibName: TrendMovieCollectionViewCell.identifier, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: TrendMovieCollectionViewCell.identifier)
         collectionView.dataSource = self
+        collectionView.delegate = self
         
         let layout = UICollectionViewFlowLayout()
         let width = UIScreen.main.bounds.width
@@ -47,12 +48,17 @@ extension TrendViewController: UICollectionViewDataSource {
         cell.bind(withMedia: mediaList[indexPath.row])
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailViewController = UIStoryboard(name: "DetailViewController", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController")
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
 }
 
 extension TrendViewController {
     func fetchTrendMovieList(for mediaType: String, at timeWindow: String) {
         let url = APIConstants.getTrendingURL + "/\(mediaType)/\(timeWindow)" + "?api_key=\(Keys.TMDB)"
-        AF.request(url, method: .get).validate().responseJSON { response in
+        AF.request(url, method: .get).validate().responseData { response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
