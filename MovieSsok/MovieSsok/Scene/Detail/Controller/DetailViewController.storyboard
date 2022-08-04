@@ -16,15 +16,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="GDP-JH-XgU">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="243"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9gU-71-VJe">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="243"/>
                                     <color key="backgroundColor" red="0.60392156860000001" green="0.602715373" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hAW-dG-xb7">
-                                    <rect key="frame" x="20" y="256.5" width="57" height="57.5"/>
+                                    <rect key="frame" x="20" y="145.5" width="57" height="57.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgQ-zE-5MV">
                                             <rect key="frame" x="0.0" y="0.0" width="57" height="29"/>
@@ -53,7 +53,7 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OverviewCell" rowHeight="126" id="yN3-Aq-I6H" customClass="OverviewCell" customModule="MovieSsok" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="398.5" width="414" height="126"/>
+                                <rect key="frame" x="0.0" y="287.5" width="414" height="126"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yN3-Aq-I6H" id="kcY-Vj-B8a">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
@@ -78,7 +78,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="126" id="Usf-cg-vtH" customClass="PersonCell" customModule="MovieSsok" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="524.5" width="414" height="126"/>
+                                <rect key="frame" x="0.0" y="413.5" width="414" height="126"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Usf-cg-vtH" id="LV3-X7-DB4">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
@@ -86,6 +86,7 @@
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OKO-pT-Wra">
                                             <rect key="frame" x="20" y="16" width="94" height="94"/>
+                                            <color key="backgroundColor" red="0.60392156860000001" green="0.602715373" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="OKO-pT-Wra" secondAttribute="height" multiplier="1:1" id="HIB-PF-QXA"/>
                                             </constraints>

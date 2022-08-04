@@ -26,6 +26,8 @@
 		BDDF7743289BDA540096196B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7742289BDA540096196B /* DetailViewController.swift */; };
 		BDDF7746289BDD9E0096196B /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7745289BDD9E0096196B /* PersonCell.swift */; };
 		BDDF7748289BDDC10096196B /* OverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7747289BDDC10096196B /* OverviewCell.swift */; };
+		BDDF774A289BDFCC0096196B /* DetailTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7749289BDFCC0096196B /* DetailTableViewDataSource.swift */; };
+		BDDF774C289BE0DB0096196B /* DetailTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF774B289BE0DB0096196B /* DetailTableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		BDDF7742289BDA540096196B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BDDF7745289BDD9E0096196B /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		BDDF7747289BDDC10096196B /* OverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewCell.swift; sourceTree = "<group>"; };
+		BDDF7749289BDFCC0096196B /* DetailTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewDataSource.swift; sourceTree = "<group>"; };
+		BDDF774B289BE0DB0096196B /* DetailTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,8 @@
 			children = (
 				BDDF7740289BDA480096196B /* DetailViewController.storyboard */,
 				BDDF7742289BDA540096196B /* DetailViewController.swift */,
+				BDDF7749289BDFCC0096196B /* DetailTableViewDataSource.swift */,
+				BDDF774B289BE0DB0096196B /* DetailTableViewDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,7 +320,9 @@
 				BDDF7748289BDDC10096196B /* OverviewCell.swift in Sources */,
 				BDDF7737289AE7EC0096196B /* Media.swift in Sources */,
 				BDDF7746289BDD9E0096196B /* PersonCell.swift in Sources */,
+				BDDF774C289BE0DB0096196B /* DetailTableViewDelegate.swift in Sources */,
 				BDDF7732289AD94C0096196B /* TrendMovieCollectionViewCell.swift in Sources */,
+				BDDF774A289BDFCC0096196B /* DetailTableViewDataSource.swift in Sources */,
 				BDDF7705289A74110096196B /* TrendViewController.swift in Sources */,
 				BDDF76EE289A6E6A0096196B /* SceneDelegate.swift in Sources */,
 				BDDF7735289AE5C40096196B /* Constants.swift in Sources */,
