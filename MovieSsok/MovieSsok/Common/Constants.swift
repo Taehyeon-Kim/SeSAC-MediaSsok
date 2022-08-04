@@ -12,4 +12,5 @@ enum APIConstants {
     static let imageBaseURL = "https://image.tmdb.org/t/p/w500"
     
     static let getTrendingURL = baseURL + "/trending"
+    static let movieBaseURL = baseURL + "/movie"
 }
