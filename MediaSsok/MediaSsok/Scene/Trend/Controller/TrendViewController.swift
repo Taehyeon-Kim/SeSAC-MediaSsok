@@ -20,7 +20,7 @@ final class TrendViewController: UIViewController {
         super.viewDidLoad()
         
         configureCollectionView()
-        fetchTrendMovieList(for: "movie", at: "week")
+        fetchTrendMediaList()
     }
 }
 
@@ -57,29 +57,16 @@ extension TrendViewController: UICollectionViewDataSource, UICollectionViewDeleg
 }
 
 extension TrendViewController {
-    func fetchTrendMovieList(for mediaType: String, at timeWindow: String) {
-        let url = Constants.URL.trendingBaseURL + "/\(mediaType)/\(timeWindow)" + "?api_key=\(Keys.TMDB)"
-        AF.request(url, method: .get).validate().responseData { response in
-            switch response.result {
-            case .success(let value):
-                let json = JSON(value)
-                let movies = json["results"].arrayValue
-                for movie in movies {
-                    let media = Media(
-                        id: movie["id"].intValue,
-                        releaseDate: movie["release_date"].stringValue,
-                        title: movie["title"].stringValue,
-                        posterPath: movie["backdrop_path"].stringValue,
-                        rate: movie["vote_average"].doubleValue,
-                        originalTitle: movie["original_title"].stringValue,
-                        overview: movie["overview"].stringValue
-                    )
-                    self.mediaList.append(media)
-                    self.collectionView.reloadData()
-                }
-                
-            case .failure(let error):
-                print(error)
+
+    private func fetchTrendMediaList(
+        for mediaType: String = "movie",
+        at timeWindow: String = "week",
+        page: Int = 3
+    ) {
+        TrendingService.shared.fetchTrendMediaList(for: mediaType, at: timeWindow, page: page) { mediaList in
+            DispatchQueue.main.async { [weak self] in
+                self?.mediaList.append(contentsOf: mediaList)
+                self?.collectionView.reloadData()
             }
         }
     }

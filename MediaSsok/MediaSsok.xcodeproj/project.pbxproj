@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD18AC96289CFC1900A1FEE4 /* TrendingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7760289CF5C10096196B /* TrendingService.swift */; };
 		BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF76EB289A6E6A0096196B /* AppDelegate.swift */; };
 		BDDF76EE289A6E6A0096196B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF76ED289A6E6A0096196B /* SceneDelegate.swift */; };
 		BDDF76F3289A6E6A0096196B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF76F1289A6E6A0096196B /* Main.storyboard */; };
@@ -42,7 +43,6 @@
 		BDDF7704289A74110096196B /* TrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendViewController.swift; sourceTree = "<group>"; };
 		BDDF7707289A75510096196B /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		BDDF770E289A75C50096196B /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		BDDF7710289A75D20096196B /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		BDDF771A289A7CFC0096196B /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		BDDF771B289A7FD80096196B /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		BDDF772C289AD8A10096196B /* TrendViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrendViewController.storyboard; sourceTree = "<group>"; };
@@ -57,6 +57,7 @@
 		BDDF7749289BDFCC0096196B /* DetailTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewDataSource.swift; sourceTree = "<group>"; };
 		BDDF774B289BE0DB0096196B /* DetailTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewDelegate.swift; sourceTree = "<group>"; };
 		BDDF775E289CF0C20096196B /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		BDDF7760289CF5C10096196B /* TrendingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +182,7 @@
 		BDDF770B289A759C0096196B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				BDDF7710289A75D20096196B /* .gitkeep */,
+				BDDF7760289CF5C10096196B /* TrendingService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -317,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD18AC96289CFC1900A1FEE4 /* TrendingService.swift in Sources */,
 				BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */,
 				BDDF771C289A7FD80096196B /* Keys.swift in Sources */,
 				BDDF7748289BDDC10096196B /* OverviewCell.swift in Sources */,
