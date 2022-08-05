@@ -25,7 +25,7 @@ final class PersonCell: UITableViewCell {
     }
 
     func configure(with data: Person?) {
-        let imageURL = URL(string: APIConstants.imageBaseURL + (data?.profilePath ?? ""))
+        let imageURL = URL(string: Constants.URL.imageBaseURL + (data?.profilePath ?? ""))
         personImageView.kf.setImage(
             with: imageURL,
             placeholder: nil,

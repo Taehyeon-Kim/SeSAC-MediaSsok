@@ -58,7 +58,7 @@ extension TrendViewController: UICollectionViewDataSource, UICollectionViewDeleg
 
 extension TrendViewController {
     func fetchTrendMovieList(for mediaType: String, at timeWindow: String) {
-        let url = APIConstants.getTrendingURL + "/\(mediaType)/\(timeWindow)" + "?api_key=\(Keys.TMDB)"
+        let url = Constants.URL.trendingBaseURL + "/\(mediaType)/\(timeWindow)" + "?api_key=\(Keys.TMDB)"
         AF.request(url, method: .get).validate().responseData { response in
             switch response.result {
             case .success(let value):

@@ -49,14 +49,14 @@ extension DetailViewController {
     }
     
     private func displayData() {
-        let imageURL = URL(string: APIConstants.imageBaseURL + (media?.posterPath ?? ""))
+        let imageURL = URL(string: Constants.URL.imageBaseURL + (media?.posterPath ?? ""))
         backgroundImageView.kf.setImage(with: imageURL)
         titleLabel.text = media?.title
         descriptionLabel.text = media?.releaseDate
     }
     
     func fetchData(for movieId: Int) {
-        let url = APIConstants.movieBaseURL + "/\(movieId)/credits" + "?api_key=\(Keys.TMDB)"
+        let url = Constants.URL.movieBaseURL + "/\(movieId)/credits" + "?api_key=\(Keys.TMDB)"
         AF.request(url, method: .get).validate().responseData { response in
             switch response.result {
             case .success(let value):

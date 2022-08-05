@@ -41,7 +41,7 @@ final class TrendMovieCollectionViewCell: UICollectionViewCell {
     }
 
     func bind(withMedia media: Media) {
-        if let url = URL(string: APIConstants.imageBaseURL + media.posterPath) {
+        if let url = URL(string: Constants.URL.imageBaseURL + media.posterPath) {
             thumbnailImageView.kf.setImage(
                 with: url,
                 placeholder: nil,
