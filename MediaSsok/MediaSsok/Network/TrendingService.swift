@@ -14,7 +14,7 @@ final class TrendingService {
     
     private init() {}
     
-    typealias completion = ([Media]) -> ()
+    typealias completion = ([Media], Int) -> ()
     
     func fetchTrendMediaList(
         for mediaType: String,
@@ -43,8 +43,9 @@ final class TrendingService {
                         overview:       $0["overview"].stringValue
                     )
                 }
+                let totalPages = json["total_pages"].intValue
                 
-                completion(mediaList)
+                completion(mediaList, totalPages)
 
             case .failure(let error):
                 print(error)
