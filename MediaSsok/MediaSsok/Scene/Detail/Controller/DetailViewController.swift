@@ -36,7 +36,6 @@ final class DetailViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         fetchData(for: media?.id ?? 0)
-        tableView.reloadData()
     }
 }
 
@@ -55,22 +54,14 @@ extension DetailViewController {
         descriptionLabel.text = media?.releaseDate
     }
     
-    func fetchData(for movieId: Int) {
-        let url = Constants.URL.movieBaseURL + "/\(movieId)/credits" + "?api_key=\(Keys.TMDB)"
-        AF.request(url, method: .get).validate().responseData { response in
-            switch response.result {
-            case .success(let value):
-                let json = JSON(value)
-                for cast in json["cast"].arrayValue {
-                    let cast = Person(name: cast["name"].stringValue, originalName: cast["original_name"].stringValue, profilePath: cast["profile_path"].stringValue)
-                    self.casts.append(cast)
-                }
-                
-                self.dataSource.updateData(self.casts)
+    // 네트워크 통신 호출 코드는 DataSource 쪽에 있는 것보다 Controller에 있는게 더 자연스러운 것 같다.
+    // DataSource 쪽에는 데이터만 넘겨준다.
+    // 위의 생각이 자연스러운 것 같은데 그렇다면 prefetching 처리를 어떻게 해주어야 할지 감이 잘 오지 않는다.
+    private func fetchData(for movieId: Int) {
+        MovieService.shared.fetchCasts(for: movieId) { casts in
+            self.dataSource.updateData(casts)
+            DispatchQueue.main.async {
                 self.tableView.reloadData()
-                
-            case .failure(let error):
-                print(error)
             }
         }
     }

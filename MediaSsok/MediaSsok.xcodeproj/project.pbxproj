@@ -10,6 +10,7 @@
 		BD18AC96289CFC1900A1FEE4 /* TrendingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7760289CF5C10096196B /* TrendingService.swift */; };
 		BDC26ECF289D2F62005C2449 /* TrendCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ECE289D2F62005C2449 /* TrendCollectionViewDataSource.swift */; };
 		BDC26ED1289D30A1005C2449 /* TrendCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ED0289D30A1005C2449 /* TrendCollectionViewDelegate.swift */; };
+		BDC26ED3289D3C50005C2449 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ED2289D3C50005C2449 /* MovieService.swift */; };
 		BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF76EB289A6E6A0096196B /* AppDelegate.swift */; };
 		BDDF76EE289A6E6A0096196B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF76ED289A6E6A0096196B /* SceneDelegate.swift */; };
 		BDDF76F3289A6E6A0096196B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF76F1289A6E6A0096196B /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		BDC26ECE289D2F62005C2449 /* TrendCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		BDC26ED0289D30A1005C2449 /* TrendCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		BDC26ED2289D3C50005C2449 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		BDDF76E8289A6E6A0096196B /* MediaSsok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaSsok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF76EB289A6E6A0096196B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDF76ED289A6E6A0096196B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				BDDF7760289CF5C10096196B /* TrendingService.swift */,
+				BDC26ED2289D3C50005C2449 /* MovieService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				BDDF7732289AD94C0096196B /* TrendMovieCollectionViewCell.swift in Sources */,
 				BDC26ECF289D2F62005C2449 /* TrendCollectionViewDataSource.swift in Sources */,
 				BDDF774A289BDFCC0096196B /* DetailTableViewDataSource.swift in Sources */,
+				BDC26ED3289D3C50005C2449 /* MovieService.swift in Sources */,
 				BDDF7705289A74110096196B /* TrendViewController.swift in Sources */,
 				BDDF76EE289A6E6A0096196B /* SceneDelegate.swift in Sources */,
 				BDDF7735289AE5C40096196B /* Constants.swift in Sources */,
