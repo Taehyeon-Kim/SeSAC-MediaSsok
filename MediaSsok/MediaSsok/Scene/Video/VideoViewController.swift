@@ -8,8 +8,14 @@
 import UIKit
 
 final class VideoViewController: UIViewController {
+    
+    var movieId: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        MovieService.shared.fetchVideos(for: movieId ?? 0) { json in
+            print(json)
+        }
     }
 }

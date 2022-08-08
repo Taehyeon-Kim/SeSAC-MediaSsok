@@ -63,6 +63,7 @@ final class TrendMovieCollectionViewCell: UICollectionViewCell {
                 options: [.transition(.fade(1.2))]
             )
         }
+        
         dateLabel.text = media.releaseDate
         categoryLabel.text = media.title
         rateLabel.text = "\(round(media.rate))"

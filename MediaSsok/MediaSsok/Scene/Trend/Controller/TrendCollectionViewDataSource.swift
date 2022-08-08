@@ -38,10 +38,11 @@ final class TrendCollectionViewDataSource: NSObject, UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrendMovieCollectionViewCell.identifier, for: indexPath) as? TrendMovieCollectionViewCell else { return UICollectionViewCell() }
-        cell.bind(withMedia: mediaList[indexPath.row])
         
+        let media = mediaList[indexPath.row]
+        cell.bind(withMedia: media)
         cell.videoCompletionHandler = { [weak self] in
-            self?.viewController.showVideoViewController()
+            self?.viewController.showVideoViewController(movieId: media.id)
         }
         
         return cell

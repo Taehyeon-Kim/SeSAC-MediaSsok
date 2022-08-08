@@ -47,8 +47,9 @@ extension TrendViewController {
         navigationController?.pushViewController(detailViewController, animated: true)
     }
     
-    func showVideoViewController() {
+    func showVideoViewController(movieId: Int) {
         guard let videoViewController = UIStoryboard(name: "VideoViewController", bundle: nil).instantiateViewController(withIdentifier: "VideoViewController") as? VideoViewController else { return }
+        videoViewController.movieId = movieId
         present(videoViewController, animated: true)
     }
 }

@@ -45,5 +45,29 @@ final class MovieService {
             }
         }
     }
+    
+    func fetchVideos(
+        for movieId: Int,
+        completion: @escaping (JSON) -> ()?
+    )
+    {
+        let trendingBaseURL = Constants.URL.movieBaseURL
+        let pathParameter = "/\(movieId)/videos"
+        let query = "?api_key=\(Keys.TMDB)"
+        let url = trendingBaseURL + pathParameter + query
+        
+        AF.request(url, method: .get).validate().responseData(queue: .global()) { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                print(json)
+                
+                completion(json)
+
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }
 
