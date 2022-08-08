@@ -48,7 +48,7 @@ final class MovieService {
     
     func fetchVideos(
         for movieId: Int,
-        completion: @escaping (JSON) -> ()?
+        completion: @escaping (JSON) -> ()
     )
     {
         let trendingBaseURL = Constants.URL.movieBaseURL
