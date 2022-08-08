@@ -64,7 +64,7 @@ final class TrendMovieCollectionViewCell: UICollectionViewCell {
             )
         }
         
-        dateLabel.text = media.releaseDate
+        dateLabel.text = media.releaseDate.toDate(to: .year)?.toString(of: .utcWithSlash)
         categoryLabel.text = media.title
         rateLabel.text = "\(round(media.rate))"
         titleLabel.text = media.originalTitle

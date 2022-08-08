@@ -10,6 +10,9 @@
 		BD18AC96289CFC1900A1FEE4 /* TrendingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7760289CF5C10096196B /* TrendingService.swift */; };
 		BD897D3D28A15595003F7B47 /* VideoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD897D3C28A15595003F7B47 /* VideoViewController.storyboard */; };
 		BD897D3F28A155B4003F7B47 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD897D3E28A155B4003F7B47 /* VideoViewController.swift */; };
+		BD897D4228A16619003F7B47 /* DateFormatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD897D4128A16619003F7B47 /* DateFormatType.swift */; };
+		BD897D4428A16684003F7B47 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD897D4328A16684003F7B47 /* Date+Extension.swift */; };
+		BD897D4628A166AB003F7B47 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD897D4528A166AB003F7B47 /* String+Extension.swift */; };
 		BDC26ECF289D2F62005C2449 /* TrendCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ECE289D2F62005C2449 /* TrendCollectionViewDataSource.swift */; };
 		BDC26ED1289D30A1005C2449 /* TrendCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ED0289D30A1005C2449 /* TrendCollectionViewDelegate.swift */; };
 		BDC26ED3289D3C50005C2449 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ED2289D3C50005C2449 /* MovieService.swift */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		BD897D3C28A15595003F7B47 /* VideoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoViewController.storyboard; sourceTree = "<group>"; };
 		BD897D3E28A155B4003F7B47 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		BD897D4128A16619003F7B47 /* DateFormatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatType.swift; sourceTree = "<group>"; };
+		BD897D4328A16684003F7B47 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		BD897D4528A166AB003F7B47 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BDC26ECE289D2F62005C2449 /* TrendCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		BDC26ED0289D30A1005C2449 /* TrendCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		BDC26ED2289D3C50005C2449 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
@@ -186,6 +192,9 @@
 			children = (
 				BDDF7734289AE5C40096196B /* Constants.swift */,
 				BDDF775E289CF0C20096196B /* URL.swift */,
+				BD897D4128A16619003F7B47 /* DateFormatType.swift */,
+				BD897D4328A16684003F7B47 /* Date+Extension.swift */,
+				BD897D4528A166AB003F7B47 /* String+Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -343,13 +352,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD18AC96289CFC1900A1FEE4 /* TrendingService.swift in Sources */,
+				BD897D4628A166AB003F7B47 /* String+Extension.swift in Sources */,
 				BDC26ED1289D30A1005C2449 /* TrendCollectionViewDelegate.swift in Sources */,
 				BD897D3F28A155B4003F7B47 /* VideoViewController.swift in Sources */,
 				BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */,
 				BDDF771C289A7FD80096196B /* Keys.swift in Sources */,
+				BD897D4428A16684003F7B47 /* Date+Extension.swift in Sources */,
 				BDDF7748289BDDC10096196B /* OverviewCell.swift in Sources */,
 				BDDF7737289AE7EC0096196B /* Media.swift in Sources */,
 				BDDF7746289BDD9E0096196B /* PersonCell.swift in Sources */,
+				BD897D4228A16619003F7B47 /* DateFormatType.swift in Sources */,
 				BDDF775F289CF0C20096196B /* URL.swift in Sources */,
 				BDDF774C289BE0DB0096196B /* DetailTableViewDelegate.swift in Sources */,
 				BDDF7732289AD94C0096196B /* TrendMovieCollectionViewCell.swift in Sources */,
