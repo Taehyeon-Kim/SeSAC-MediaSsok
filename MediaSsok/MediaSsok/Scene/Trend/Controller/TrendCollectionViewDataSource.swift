@@ -17,9 +17,11 @@ final class TrendCollectionViewDataSource: NSObject, UICollectionViewDataSource,
     private var startPage = 1
     private var totalPages = 0
     private var collectionView: UICollectionView
+    private var viewController: TrendViewController
     
-    init(collectionView: UICollectionView) {
+    init(collectionView: UICollectionView, viewController: TrendViewController) {
         self.collectionView = collectionView
+        self.viewController = viewController
         super.init()
         fetchTrendMediaList()
     }
@@ -37,6 +39,11 @@ final class TrendCollectionViewDataSource: NSObject, UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrendMovieCollectionViewCell.identifier, for: indexPath) as? TrendMovieCollectionViewCell else { return UICollectionViewCell() }
         cell.bind(withMedia: mediaList[indexPath.row])
+        
+        cell.videoCompletionHandler = { [weak self] in
+            self?.viewController.showVideoViewController()
+        }
+        
         return cell
     }
 

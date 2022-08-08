@@ -13,6 +13,9 @@ final class TrendMovieCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "TrendMovieCollectionViewCell"
 
+    
+    // MARK: - UI Properties
+    
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
@@ -21,9 +24,21 @@ final class TrendMovieCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    
+    // MARK: - Properties
+    
+    typealias CompletionHandler = (() -> ())
+    var videoCompletionHandler: CompletionHandler?
+    
+    // MARK: - Override Functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         style()
+    }
+    
+    @IBAction func linkButtonTapped(_ sender: UIButton) {
+        videoCompletionHandler?()
     }
     
     func style() {

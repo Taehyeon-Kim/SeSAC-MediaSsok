@@ -12,7 +12,7 @@ import SwiftyJSON
 
 final class TrendViewController: UIViewController {
     
-    private lazy var dataSource = TrendCollectionViewDataSource(collectionView: collectionView)
+    private lazy var dataSource = TrendCollectionViewDataSource(collectionView: collectionView, viewController: self)
     private lazy var delegate = TrendCollectionViewDelegate(viewController: self)
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -45,5 +45,10 @@ extension TrendViewController {
         let mediaList = dataSource.getMediaList()
         detailViewController.media = mediaList[indexPath.row]
         navigationController?.pushViewController(detailViewController, animated: true)
+    }
+    
+    func showVideoViewController() {
+        guard let videoViewController = UIStoryboard(name: "VideoViewController", bundle: nil).instantiateViewController(withIdentifier: "VideoViewController") as? VideoViewController else { return }
+        present(videoViewController, animated: true)
     }
 }

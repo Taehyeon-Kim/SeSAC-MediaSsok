@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BD18AC96289CFC1900A1FEE4 /* TrendingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7760289CF5C10096196B /* TrendingService.swift */; };
+		BD897D3D28A15595003F7B47 /* VideoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD897D3C28A15595003F7B47 /* VideoViewController.storyboard */; };
+		BD897D3F28A155B4003F7B47 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD897D3E28A155B4003F7B47 /* VideoViewController.swift */; };
 		BDC26ECF289D2F62005C2449 /* TrendCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ECE289D2F62005C2449 /* TrendCollectionViewDataSource.swift */; };
 		BDC26ED1289D30A1005C2449 /* TrendCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ED0289D30A1005C2449 /* TrendCollectionViewDelegate.swift */; };
 		BDC26ED3289D3C50005C2449 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ED2289D3C50005C2449 /* MovieService.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD897D3C28A15595003F7B47 /* VideoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoViewController.storyboard; sourceTree = "<group>"; };
+		BD897D3E28A155B4003F7B47 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		BDC26ECE289D2F62005C2449 /* TrendCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		BDC26ED0289D30A1005C2449 /* TrendCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		BDC26ED2289D3C50005C2449 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD897D3B28A1557B003F7B47 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				BD897D3C28A15595003F7B47 /* VideoViewController.storyboard */,
+				BD897D3E28A155B4003F7B47 /* VideoViewController.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		BDDF76DF289A6E6A0096196B = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +157,7 @@
 		BDDF7702289A73410096196B /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				BD897D3B28A1557B003F7B47 /* Video */,
 				BDDF773E289BDA300096196B /* Detail */,
 				BDDF7703289A73DD0096196B /* Trend */,
 			);
@@ -314,6 +328,7 @@
 				BDDF76F8289A6E6C0096196B /* LaunchScreen.storyboard in Resources */,
 				BDDF7733289AD94C0096196B /* TrendMovieCollectionViewCell.xib in Resources */,
 				BDDF772D289AD8A10096196B /* TrendViewController.storyboard in Resources */,
+				BD897D3D28A15595003F7B47 /* VideoViewController.storyboard in Resources */,
 				BDDF76F5289A6E6C0096196B /* Assets.xcassets in Resources */,
 				BDDF7741289BDA480096196B /* DetailViewController.storyboard in Resources */,
 				BDDF76F3289A6E6A0096196B /* Main.storyboard in Resources */,
@@ -329,6 +344,7 @@
 			files = (
 				BD18AC96289CFC1900A1FEE4 /* TrendingService.swift in Sources */,
 				BDC26ED1289D30A1005C2449 /* TrendCollectionViewDelegate.swift in Sources */,
+				BD897D3F28A155B4003F7B47 /* VideoViewController.swift in Sources */,
 				BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */,
 				BDDF771C289A7FD80096196B /* Keys.swift in Sources */,
 				BDDF7748289BDDC10096196B /* OverviewCell.swift in Sources */,
