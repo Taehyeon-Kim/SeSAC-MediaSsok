@@ -9,9 +9,9 @@ import UIKit
 
 final class MediaCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var thumbnailImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
 }
