@@ -21,6 +21,9 @@
 		BDAA91C928A2934600CB3848 /* MediaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDAA91C728A2934600CB3848 /* MediaCollectionViewCell.xib */; };
 		BDAA91CE28A2938000CB3848 /* MediaSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA91CC28A2938000CB3848 /* MediaSectionTableViewCell.swift */; };
 		BDAA91CF28A2938000CB3848 /* MediaSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDAA91CD28A2938000CB3848 /* MediaSectionTableViewCell.xib */; };
+		BDAD2D3728A3EA6B004ED9A2 /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD2D3628A3EA6B004ED9A2 /* Popular.swift */; };
+		BDAD2D3928A3EA71004ED9A2 /* TopRated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD2D3828A3EA71004ED9A2 /* TopRated.swift */; };
+		BDAD2D3B28A3F1B5004ED9A2 /* Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD2D3A28A3F1B5004ED9A2 /* Upcoming.swift */; };
 		BDC26ECF289D2F62005C2449 /* TrendCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ECE289D2F62005C2449 /* TrendCollectionViewDataSource.swift */; };
 		BDC26ED1289D30A1005C2449 /* TrendCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ED0289D30A1005C2449 /* TrendCollectionViewDelegate.swift */; };
 		BDC26ED3289D3C50005C2449 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ED2289D3C50005C2449 /* MovieService.swift */; };
@@ -62,6 +65,9 @@
 		BDAA91C728A2934600CB3848 /* MediaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCollectionViewCell.xib; sourceTree = "<group>"; };
 		BDAA91CC28A2938000CB3848 /* MediaSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSectionTableViewCell.swift; sourceTree = "<group>"; };
 		BDAA91CD28A2938000CB3848 /* MediaSectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaSectionTableViewCell.xib; sourceTree = "<group>"; };
+		BDAD2D3628A3EA6B004ED9A2 /* Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popular.swift; sourceTree = "<group>"; };
+		BDAD2D3828A3EA71004ED9A2 /* TopRated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRated.swift; sourceTree = "<group>"; };
+		BDAD2D3A28A3F1B5004ED9A2 /* Upcoming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upcoming.swift; sourceTree = "<group>"; };
 		BDC26ECE289D2F62005C2449 /* TrendCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		BDC26ED0289D30A1005C2449 /* TrendCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		BDC26ED2289D3C50005C2449 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
@@ -284,6 +290,9 @@
 			children = (
 				BDDF770E289A75C50096196B /* .gitkeep */,
 				BDDF7736289AE7EC0096196B /* Media.swift */,
+				BDAD2D3628A3EA6B004ED9A2 /* Popular.swift */,
+				BDAD2D3828A3EA71004ED9A2 /* TopRated.swift */,
+				BDAD2D3A28A3F1B5004ED9A2 /* Upcoming.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -437,6 +446,7 @@
 			files = (
 				BD18AC96289CFC1900A1FEE4 /* TrendingService.swift in Sources */,
 				BD897D4628A166AB003F7B47 /* String+Extension.swift in Sources */,
+				BDAD2D3928A3EA71004ED9A2 /* TopRated.swift in Sources */,
 				BDC26ED1289D30A1005C2449 /* TrendCollectionViewDelegate.swift in Sources */,
 				BD897D3F28A155B4003F7B47 /* VideoViewController.swift in Sources */,
 				BDAA91CE28A2938000CB3848 /* MediaSectionTableViewCell.swift in Sources */,
@@ -452,10 +462,12 @@
 				BD897D4228A16619003F7B47 /* DateFormatType.swift in Sources */,
 				BDDF775F289CF0C20096196B /* URL.swift in Sources */,
 				BDDF774C289BE0DB0096196B /* DetailTableViewDelegate.swift in Sources */,
+				BDAD2D3728A3EA6B004ED9A2 /* Popular.swift in Sources */,
 				BDDF7732289AD94C0096196B /* TrendMovieCollectionViewCell.swift in Sources */,
 				BDC26ECF289D2F62005C2449 /* TrendCollectionViewDataSource.swift in Sources */,
 				BDDF774A289BDFCC0096196B /* DetailTableViewDataSource.swift in Sources */,
 				BDC26ED3289D3C50005C2449 /* MovieService.swift in Sources */,
+				BDAD2D3B28A3F1B5004ED9A2 /* Upcoming.swift in Sources */,
 				BDDF7705289A74110096196B /* TrendViewController.swift in Sources */,
 				BDDF76EE289A6E6A0096196B /* SceneDelegate.swift in Sources */,
 				BDDF7735289AE5C40096196B /* Constants.swift in Sources */,

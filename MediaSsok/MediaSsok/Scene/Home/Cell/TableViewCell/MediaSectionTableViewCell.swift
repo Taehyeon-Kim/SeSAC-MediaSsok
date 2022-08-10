@@ -15,7 +15,14 @@ final class MediaSectionTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        configureUI()
         configureCollectionView()
+    }
+    
+    private func configureUI() {
+        backgroundColor = .clear
+        titleLabel.textColor = .white
+        titleLabel.font = .boldSystemFont(ofSize: 20)
     }
     
     private func configureCollectionView() {
@@ -27,5 +34,6 @@ final class MediaSectionTableViewCell: UITableViewCell {
         layout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
         collectionView.collectionViewLayout = layout
         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.backgroundColor = .clear
     }
 }

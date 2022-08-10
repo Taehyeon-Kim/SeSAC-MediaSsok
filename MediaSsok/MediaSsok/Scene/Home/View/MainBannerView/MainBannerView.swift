@@ -24,5 +24,7 @@ final class MainBannerView: UIView {
         let view = UINib(nibName: "MainBannerView", bundle: nil).instantiate(withOwner: self).first as! UIView
         view.frame = bounds
         addSubview(view)
+        
+        posterImageView.contentMode = .scaleAspectFill
     }
 }

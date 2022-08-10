@@ -7,12 +7,19 @@
 
 import Foundation
 
-struct Media {
-    let id: Int
+protocol Content {
+    var id: Int { get }
+    var title: String { get }
+    var overview: String { get }
+    var posterPath: String { get }
+}
+
+struct Media: Content {
+    var id: Int
     let releaseDate: String
-    let title: String
-    let posterPath: String
+    var title: String
+    var posterPath: String
     let rate: Double
     let originalTitle: String
-    let overview: String
+    var overview: String
 }

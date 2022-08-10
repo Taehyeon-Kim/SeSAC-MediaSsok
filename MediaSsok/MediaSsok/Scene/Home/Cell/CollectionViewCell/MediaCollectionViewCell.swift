@@ -13,5 +13,8 @@ final class MediaCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        backgroundColor = .clear
+        layer.cornerRadius = 12
     }
 }
