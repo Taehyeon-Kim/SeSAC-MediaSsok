@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        let trendViewController = UIStoryboard(name: "HomeViewController", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController")
+        let trendViewController = UIStoryboard(name: "CinemaViewController", bundle: nil).instantiateViewController(withIdentifier: "CinemaViewController")
         window?.rootViewController = UINavigationController(rootViewController: trendViewController)
         window?.makeKeyAndVisible()
     }
