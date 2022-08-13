@@ -26,6 +26,7 @@
 		BDAD2D3B28A3F1B5004ED9A2 /* Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD2D3A28A3F1B5004ED9A2 /* Upcoming.swift */; };
 		BDBA189128A7B04D001F2ABA /* CinemaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDBA189028A7B04D001F2ABA /* CinemaViewController.storyboard */; };
 		BDBA189328A7B057001F2ABA /* CinemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBA189228A7B057001F2ABA /* CinemaViewController.swift */; };
+		BDBA189628A7D497001F2ABA /* Theater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBA189528A7D497001F2ABA /* Theater.swift */; };
 		BDC26ECF289D2F62005C2449 /* TrendCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ECE289D2F62005C2449 /* TrendCollectionViewDataSource.swift */; };
 		BDC26ED1289D30A1005C2449 /* TrendCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ED0289D30A1005C2449 /* TrendCollectionViewDelegate.swift */; };
 		BDC26ED3289D3C50005C2449 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26ED2289D3C50005C2449 /* MovieService.swift */; };
@@ -72,6 +73,7 @@
 		BDAD2D3A28A3F1B5004ED9A2 /* Upcoming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upcoming.swift; sourceTree = "<group>"; };
 		BDBA189028A7B04D001F2ABA /* CinemaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CinemaViewController.storyboard; sourceTree = "<group>"; };
 		BDBA189228A7B057001F2ABA /* CinemaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaViewController.swift; sourceTree = "<group>"; };
+		BDBA189528A7D497001F2ABA /* Theater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theater.swift; sourceTree = "<group>"; };
 		BDC26ECE289D2F62005C2449 /* TrendCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		BDC26ED0289D30A1005C2449 /* TrendCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		BDC26ED2289D3C50005C2449 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				BDAD2D3628A3EA6B004ED9A2 /* Popular.swift */,
 				BDAD2D3828A3EA71004ED9A2 /* TopRated.swift */,
 				BDAD2D3A28A3F1B5004ED9A2 /* Upcoming.swift */,
+				BDBA189528A7D497001F2ABA /* Theater.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				BDAA91C328A2921E00CB3848 /* MainBannerView.swift in Sources */,
 				BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */,
 				BDDF771C289A7FD80096196B /* Keys.swift in Sources */,
+				BDBA189628A7D497001F2ABA /* Theater.swift in Sources */,
 				BDAA91C828A2934600CB3848 /* MediaCollectionViewCell.swift in Sources */,
 				BD897D4428A16684003F7B47 /* Date+Extension.swift in Sources */,
 				BDAA91B928A2917A00CB3848 /* HomeViewController.swift in Sources */,
