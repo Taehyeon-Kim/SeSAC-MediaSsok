@@ -14,12 +14,71 @@ final class CinemaViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     private lazy var locationManager = CLLocationManager()
+    private var theaterList = TheaterList.mapAnnotations
+    private var filterList: [Theater] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureUI()
         locationManager.delegate = self
         setRegionAndAnnotation()
+    }
+}
+
+extension CinemaViewController {
+    
+    private func configureUI() {
+        title = "CINEMA"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(cinemaFilterButtonTapped))
+        filterTheaterList(type: "전체보기")
+    }
+    
+    @objc private func cinemaFilterButtonTapped(_ sender: UIButton) {
+
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let megabox = UIAlertAction(title: "메가박스", style: .default) { action in
+            self.filterTheaterList(type: "메가박스")
+        }
+        
+        let lottecinema = UIAlertAction(title: "롯데시네마", style: .default ) { action in
+            self.filterTheaterList(type: "롯데시네마")
+        }
+        
+        let cgv = UIAlertAction(title: "CGV", style: .default) { action in
+            self.filterTheaterList(type: "CGV")
+        }
+        
+        let viewAll = UIAlertAction(title: "전체보기", style: .default) { action in
+            self.filterTheaterList(type: "전체보기")
+        }
+        
+        let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        
+        actionSheet.addAction(megabox)
+        actionSheet.addAction(lottecinema)
+        actionSheet.addAction(cgv)
+        actionSheet.addAction(viewAll)
+        actionSheet.addAction(cancel)
+        
+        present(actionSheet, animated: true)
+    }
+    
+    private func filterTheaterList(type: String) {
+        mapView.removeAnnotations(mapView.annotations)
+        filterList.removeAll()
+        
+        if type == "전체보기" {
+            filterList = theaterList
+        } else {
+            filterList = theaterList.filter { $0.type == type }
+        }
+        
+        filterList.forEach { theater in
+            let center = CLLocationCoordinate2D(latitude: theater.latitude, longitude: theater.longitude)
+            self.setAnnotation(center: center, title: theater.location)
+        }
     }
 }
 
