@@ -9,7 +9,7 @@ import UIKit
 
 import Kingfisher
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: BaseViewController {
     
     private var sectionTitle: [String] = []
     private var media: [[Content]] = []

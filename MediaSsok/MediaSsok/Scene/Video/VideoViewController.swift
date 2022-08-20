@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-final class VideoViewController: UIViewController {
+final class VideoViewController: BaseViewController {
     
     @IBOutlet weak var webView: WKWebView!
     

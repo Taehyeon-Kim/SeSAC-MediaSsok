@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-final class TrendViewController: UIViewController {
+final class TrendViewController: BaseViewController {
     
     private lazy var dataSource = TrendCollectionViewDataSource(collectionView: collectionView, viewController: self)
     private lazy var delegate = TrendCollectionViewDelegate(viewController: self)

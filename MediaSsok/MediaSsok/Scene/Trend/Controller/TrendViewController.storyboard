@@ -11,13 +11,13 @@
         <!--Trend View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="TrendViewController" id="Y6W-OH-hqX" customClass="TrendViewController" customModule="MovieSsok" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TrendViewController" id="Y6W-OH-hqX" customClass="TrendViewController" customModule="MediaSsok" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Ma-Ft-569">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sij-FN-VeX">
                                     <size key="itemSize" width="128" height="128"/>
@@ -32,7 +32,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Ma-Ft-569" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="EgM-T5-J8M"/>
-                            <constraint firstItem="6Ma-Ft-569" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="OSb-wN-XC7"/>
+                            <constraint firstItem="6Ma-Ft-569" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="OSb-wN-XC7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6Ma-Ft-569" secondAttribute="trailing" id="ZRw-7W-Opg"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6Ma-Ft-569" secondAttribute="bottom" id="gAG-5L-Pdw"/>
                         </constraints>

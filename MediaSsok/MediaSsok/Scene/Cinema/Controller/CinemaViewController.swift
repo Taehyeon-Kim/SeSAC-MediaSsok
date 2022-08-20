@@ -9,7 +9,7 @@ import UIKit
 import CoreLocation
 import MapKit
 
-final class CinemaViewController: UIViewController {
+final class CinemaViewController: BaseViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
