@@ -14,6 +14,7 @@ final class TrendViewController: BaseViewController {
     
     private lazy var dataSource = TrendCollectionViewDataSource(collectionView: collectionView, viewController: self)
     private lazy var delegate = TrendCollectionViewDelegate(viewController: self)
+    private lazy var sceneManager = SceneManager(controller: self)
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -41,14 +42,14 @@ extension TrendViewController {
     }
 
     func pushToDetailViewController(indexPath: IndexPath) {
-        guard let detailViewController = UIStoryboard(name: "DetailViewController", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
+        let detailViewController = Scene.detail
         let mediaList = dataSource.getMediaList()
         detailViewController.media = mediaList[indexPath.row]
-        navigationController?.pushViewController(detailViewController, animated: true)
+        sceneManager.transition(to: detailViewController, using: .push, animated: true)
     }
     
     func showVideoViewController(movieId: Int) {
-        guard let videoViewController = UIStoryboard(name: "VideoViewController", bundle: nil).instantiateViewController(withIdentifier: "VideoViewController") as? VideoViewController else { return }
+        let videoViewController = Scene.video
         videoViewController.movieId = movieId
         present(videoViewController, animated: true)
     }
