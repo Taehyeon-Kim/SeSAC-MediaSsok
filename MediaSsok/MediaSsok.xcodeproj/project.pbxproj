@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BD18AC96289CFC1900A1FEE4 /* TrendingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF7760289CF5C10096196B /* TrendingService.swift */; };
+		BD4C60D528B0D1AC00BB464E /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4C60D428B0D1AC00BB464E /* BaseTabBarController.swift */; };
+		BD4C60D728B0D27200BB464E /* TabStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4C60D628B0D27200BB464E /* TabStyle.swift */; };
+		BD4C60D928B0D47F00BB464E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4C60D828B0D47F00BB464E /* MainTabBarController.swift */; };
 		BD897D3D28A15595003F7B47 /* VideoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD897D3C28A15595003F7B47 /* VideoViewController.storyboard */; };
 		BD897D3F28A155B4003F7B47 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD897D3E28A155B4003F7B47 /* VideoViewController.swift */; };
 		BD897D4228A16619003F7B47 /* DateFormatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD897D4128A16619003F7B47 /* DateFormatType.swift */; };
@@ -55,6 +58,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD4C60D428B0D1AC00BB464E /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		BD4C60D628B0D27200BB464E /* TabStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStyle.swift; sourceTree = "<group>"; };
+		BD4C60D828B0D47F00BB464E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BD897D3C28A15595003F7B47 /* VideoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoViewController.storyboard; sourceTree = "<group>"; };
 		BD897D3E28A155B4003F7B47 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		BD897D4128A16619003F7B47 /* DateFormatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatType.swift; sourceTree = "<group>"; };
@@ -118,6 +124,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD4C60D328B0D19B00BB464E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C60D428B0D1AC00BB464E /* BaseTabBarController.swift */,
+				BD4C60D628B0D27200BB464E /* TabStyle.swift */,
+				BD4C60D828B0D47F00BB464E /* MainTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		BD897D3B28A1557B003F7B47 /* Video */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +287,7 @@
 		BDDF7702289A73410096196B /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				BD4C60D328B0D19B00BB464E /* TabBar */,
 				BDDF773E289BDA300096196B /* Detail */,
 				BDAA91B428A2914E00CB3848 /* Home */,
 				BDBA188F28A7B025001F2ABA /* Cinema */,
@@ -472,6 +489,7 @@
 			files = (
 				BD18AC96289CFC1900A1FEE4 /* TrendingService.swift in Sources */,
 				BD897D4628A166AB003F7B47 /* String+Extension.swift in Sources */,
+				BD4C60D928B0D47F00BB464E /* MainTabBarController.swift in Sources */,
 				BDAD2D3928A3EA71004ED9A2 /* TopRated.swift in Sources */,
 				BDC26ED1289D30A1005C2449 /* TrendCollectionViewDelegate.swift in Sources */,
 				BD897D3F28A155B4003F7B47 /* VideoViewController.swift in Sources */,
@@ -482,10 +500,12 @@
 				BDBA189628A7D497001F2ABA /* Theater.swift in Sources */,
 				BDAA91C828A2934600CB3848 /* MediaCollectionViewCell.swift in Sources */,
 				BD897D4428A16684003F7B47 /* Date+Extension.swift in Sources */,
+				BD4C60D528B0D1AC00BB464E /* BaseTabBarController.swift in Sources */,
 				BDAA91B928A2917A00CB3848 /* HomeViewController.swift in Sources */,
 				BDDF7748289BDDC10096196B /* OverviewCell.swift in Sources */,
 				BDDF7737289AE7EC0096196B /* Media.swift in Sources */,
 				BDDF7746289BDD9E0096196B /* PersonCell.swift in Sources */,
+				BD4C60D728B0D27200BB464E /* TabStyle.swift in Sources */,
 				BD897D4228A16619003F7B47 /* DateFormatType.swift in Sources */,
 				BDDF775F289CF0C20096196B /* URL.swift in Sources */,
 				BDDF774C289BE0DB0096196B /* DetailTableViewDelegate.swift in Sources */,

@@ -31,6 +31,7 @@ final class HomeViewController: UIViewController {
 extension HomeViewController {
     
     private func configureUI() {
+        view.backgroundColor = .clear
         navigationController?.navigationBar.isHidden = true
         configureTableView()
     }
