@@ -42,7 +42,7 @@ extension HomeViewController {
     private func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "MediaSectionTableViewCell", bundle: nil), forCellReuseIdentifier: "MediaSectionTableViewCell")
+        tableView.register(UINib(nibName: MediaSectionTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: MediaSectionTableViewCell.reuseIdentifier)
         tableView.tableHeaderView = tableHeaderView
         tableView.backgroundColor = .black
     }

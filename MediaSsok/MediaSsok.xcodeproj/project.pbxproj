@@ -44,6 +44,7 @@
 		BDCEFC6C28B22A7A00EE0439 /* MediaSsok_UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BDCEFC6B28B22A7A00EE0439 /* MediaSsok_UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDCEFC6F28B22A7A00EE0439 /* MediaSsok_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDCEFC6928B22A7A00EE0439 /* MediaSsok_UIKit.framework */; };
 		BDCEFC7028B22A7A00EE0439 /* MediaSsok_UIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDCEFC6928B22A7A00EE0439 /* MediaSsok_UIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BDCEFC7628B22EEA00EE0439 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEFC7528B22EEA00EE0439 /* Reusable.swift */; };
 		BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF76EB289A6E6A0096196B /* AppDelegate.swift */; };
 		BDDF76EE289A6E6A0096196B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF76ED289A6E6A0096196B /* SceneDelegate.swift */; };
 		BDDF76F3289A6E6A0096196B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF76F1289A6E6A0096196B /* Main.storyboard */; };
@@ -135,6 +136,7 @@
 		BDCEFC6228B2264000EE0439 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		BDCEFC6928B22A7A00EE0439 /* MediaSsok_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MediaSsok_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCEFC6B28B22A7A00EE0439 /* MediaSsok_UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaSsok_UIKit.h; sourceTree = "<group>"; };
+		BDCEFC7528B22EEA00EE0439 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		BDDF76E8289A6E6A0096196B /* MediaSsok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaSsok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF76EB289A6E6A0096196B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDF76ED289A6E6A0096196B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -309,19 +311,20 @@
 		BDCEFC5428B2220A00EE0439 /* MediaSsok-Core */ = {
 			isa = PBXGroup;
 			children = (
-				BDCEFC6128B2263400EE0439 /* Foundation */,
+				BDCEFC7428B22E9300EE0439 /* UIKit+ */,
+				BDCEFC6128B2263400EE0439 /* Foundation+ */,
 				BDCEFC5528B2220A00EE0439 /* MediaSsok_Core.h */,
 				BDCEFC5F28B2233800EE0439 /* Logger.swift */,
 			);
 			path = "MediaSsok-Core";
 			sourceTree = "<group>";
 		};
-		BDCEFC6128B2263400EE0439 /* Foundation */ = {
+		BDCEFC6128B2263400EE0439 /* Foundation+ */ = {
 			isa = PBXGroup;
 			children = (
 				BDCEFC6228B2264000EE0439 /* String+.swift */,
 			);
-			path = Foundation;
+			path = "Foundation+";
 			sourceTree = "<group>";
 		};
 		BDCEFC6A28B22A7A00EE0439 /* MediaSsok-UIKit */ = {
@@ -330,6 +333,14 @@
 				BDCEFC6B28B22A7A00EE0439 /* MediaSsok_UIKit.h */,
 			);
 			path = "MediaSsok-UIKit";
+			sourceTree = "<group>";
+		};
+		BDCEFC7428B22E9300EE0439 /* UIKit+ */ = {
+			isa = PBXGroup;
+			children = (
+				BDCEFC7528B22EEA00EE0439 /* Reusable.swift */,
+			);
+			path = "UIKit+";
 			sourceTree = "<group>";
 		};
 		BDDF76DF289A6E6A0096196B = {
@@ -683,6 +694,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCEFC7628B22EEA00EE0439 /* Reusable.swift in Sources */,
 				BDCEFC6328B2264000EE0439 /* String+.swift in Sources */,
 				BDCEFC6028B2233800EE0439 /* Logger.swift in Sources */,
 			);
