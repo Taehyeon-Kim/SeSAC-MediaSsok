@@ -45,6 +45,10 @@
 		BDCEFC6F28B22A7A00EE0439 /* MediaSsok_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDCEFC6928B22A7A00EE0439 /* MediaSsok_UIKit.framework */; };
 		BDCEFC7028B22A7A00EE0439 /* MediaSsok_UIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDCEFC6928B22A7A00EE0439 /* MediaSsok_UIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BDCEFC7628B22EEA00EE0439 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEFC7528B22EEA00EE0439 /* Reusable.swift */; };
+		BDCEFC7928B24C5500EE0439 /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEFC7828B24C5500EE0439 /* IntroPageViewController.swift */; };
+		BDCEFC7B28B24C7200EE0439 /* FirstContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEFC7A28B24C7200EE0439 /* FirstContentViewController.swift */; };
+		BDCEFC7D28B24C7B00EE0439 /* SecondContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEFC7C28B24C7B00EE0439 /* SecondContentViewController.swift */; };
+		BDCEFC7F28B24C8200EE0439 /* ThirdContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEFC7E28B24C8200EE0439 /* ThirdContentViewController.swift */; };
 		BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF76EB289A6E6A0096196B /* AppDelegate.swift */; };
 		BDDF76EE289A6E6A0096196B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF76ED289A6E6A0096196B /* SceneDelegate.swift */; };
 		BDDF76F3289A6E6A0096196B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF76F1289A6E6A0096196B /* Main.storyboard */; };
@@ -137,6 +141,10 @@
 		BDCEFC6928B22A7A00EE0439 /* MediaSsok_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MediaSsok_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCEFC6B28B22A7A00EE0439 /* MediaSsok_UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaSsok_UIKit.h; sourceTree = "<group>"; };
 		BDCEFC7528B22EEA00EE0439 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		BDCEFC7828B24C5500EE0439 /* IntroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
+		BDCEFC7A28B24C7200EE0439 /* FirstContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstContentViewController.swift; sourceTree = "<group>"; };
+		BDCEFC7C28B24C7B00EE0439 /* SecondContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContentViewController.swift; sourceTree = "<group>"; };
+		BDCEFC7E28B24C8200EE0439 /* ThirdContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdContentViewController.swift; sourceTree = "<group>"; };
 		BDDF76E8289A6E6A0096196B /* MediaSsok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaSsok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF76EB289A6E6A0096196B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDF76ED289A6E6A0096196B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -343,6 +351,17 @@
 			path = "UIKit+";
 			sourceTree = "<group>";
 		};
+		BDCEFC7728B24C1300EE0439 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				BDCEFC7828B24C5500EE0439 /* IntroPageViewController.swift */,
+				BDCEFC7A28B24C7200EE0439 /* FirstContentViewController.swift */,
+				BDCEFC7C28B24C7B00EE0439 /* SecondContentViewController.swift */,
+				BDCEFC7E28B24C8200EE0439 /* ThirdContentViewController.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
 		BDDF76DF289A6E6A0096196B = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +429,7 @@
 		BDDF7702289A73410096196B /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				BDCEFC7728B24C1300EE0439 /* Intro */,
 				BD4C60D328B0D19B00BB464E /* TabBar */,
 				BDDF773E289BDA300096196B /* Detail */,
 				BDAA91B428A2914E00CB3848 /* Home */,
@@ -715,12 +735,15 @@
 				BD897D4628A166AB003F7B47 /* String+Extension.swift in Sources */,
 				BD4C60D928B0D47F00BB464E /* MainTabBarController.swift in Sources */,
 				BDAD2D3928A3EA71004ED9A2 /* TopRated.swift in Sources */,
+				BDCEFC7B28B24C7200EE0439 /* FirstContentViewController.swift in Sources */,
 				BDC26ED1289D30A1005C2449 /* TrendCollectionViewDelegate.swift in Sources */,
 				BD897D3F28A155B4003F7B47 /* VideoViewController.swift in Sources */,
 				BDAA91CE28A2938000CB3848 /* MediaSectionTableViewCell.swift in Sources */,
 				BD4C60DC28B0E16B00BB464E /* BaseViewController.swift in Sources */,
 				BDAA91C328A2921E00CB3848 /* MainBannerView.swift in Sources */,
+				BDCEFC7D28B24C7B00EE0439 /* SecondContentViewController.swift in Sources */,
 				BDDF76EC289A6E6A0096196B /* AppDelegate.swift in Sources */,
+				BDCEFC7F28B24C8200EE0439 /* ThirdContentViewController.swift in Sources */,
 				BDDF771C289A7FD80096196B /* Keys.swift in Sources */,
 				BDBA189628A7D497001F2ABA /* Theater.swift in Sources */,
 				BDAA91C828A2934600CB3848 /* MediaCollectionViewCell.swift in Sources */,
@@ -739,6 +762,7 @@
 				BDDF7732289AD94C0096196B /* TrendMovieCollectionViewCell.swift in Sources */,
 				BDC26ECF289D2F62005C2449 /* TrendCollectionViewDataSource.swift in Sources */,
 				BDDF774A289BDFCC0096196B /* DetailTableViewDataSource.swift in Sources */,
+				BDCEFC7928B24C5500EE0439 /* IntroPageViewController.swift in Sources */,
 				BDC26ED3289D3C50005C2449 /* MovieService.swift in Sources */,
 				BDAD2D3B28A3F1B5004ED9A2 /* Upcoming.swift in Sources */,
 				BDDF7705289A74110096196B /* TrendViewController.swift in Sources */,
