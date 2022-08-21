@@ -18,7 +18,7 @@ enum TransitionStyle {
 }
 
 protocol SceneManagerType: AnyObject {
-    func transition(to scene: UIViewController, using Style: TransitionStyle, animated: Bool)
+    func transition<T: UIViewController>(to scene: T, using Style: TransitionStyle, animated: Bool, completion: ((T) -> ())?)
 }
 
 final class SceneManager: SceneManagerType {
@@ -29,7 +29,9 @@ final class SceneManager: SceneManagerType {
         self.currentViewController = currentViewController
     }
     
-    func transition(to scene: UIViewController, using Style: TransitionStyle, animated: Bool) {
+    func transition<ViewController: UIViewController>(to scene: ViewController, using Style: TransitionStyle, animated: Bool, completion: ((ViewController) -> ())? = nil) {
+        
+        completion?(scene)
         
         switch Style {
         case .present:

@@ -9,6 +9,7 @@ import UIKit
 
 import Alamofire
 import SwiftyJSON
+import SwiftUI
 
 final class TrendViewController: BaseViewController {
     
@@ -42,15 +43,16 @@ extension TrendViewController {
     }
 
     func pushToDetailViewController(indexPath: IndexPath) {
-        let detailViewController = Scene.detail
         let mediaList = dataSource.getMediaList()
-        detailViewController.media = mediaList[indexPath.row]
-        sceneManager.transition(to: detailViewController, using: .push, animated: true)
+
+        sceneManager.transition(to: Scene.detail, using: .push, animated: true) {
+            $0.media = mediaList[indexPath.row]
+        }
     }
     
     func showVideoViewController(movieId: Int) {
-        let videoViewController = Scene.video
-        videoViewController.movieId = movieId
-        present(videoViewController, animated: true)
+        sceneManager.transition(to: Scene.video, using: .present, animated: true) {
+            $0.movieId = movieId
+        }
     }
 }
