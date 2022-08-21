@@ -7,6 +7,7 @@
 
 import UIKit
 
+import MediaSsok_Core
 import Kingfisher
 
 final class HomeViewController: BaseViewController {
@@ -24,6 +25,8 @@ final class HomeViewController: BaseViewController {
         
         configureUI()
         fetchHomeMedia()
+        
+        Logger.log("This is a ERROR message")
     }
 }
 
